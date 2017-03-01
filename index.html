@@ -5,14 +5,20 @@
         <title></title>
     </head>
     <body ng-controller="lessonCtrl">
-        {{test}}
+        <div class="">
+            <!-- {{lessons}} -->
 
-        <lesson-hider></lesson-hider>
+        </div>
 
+        <ul>
+        	<lesson-hider ng-repeat="lesson in lessons" lesson="lesson"></lesson-hider>
+        </ul>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="lessonCtrl.js"></script>
         <script src="lessonHider.js"></script>
+        <script src="lessonService.js"></script>
+
 
         <!-- <script src="lessonService.js"></script> -->
     </body>
